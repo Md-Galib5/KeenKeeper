@@ -1,10 +1,15 @@
 import React from 'react';
+import Banner from '../../components/shared/Banner';
+import Box from '../../components/shared/Box';
+import Card from '../../components/shared/Card';
 
 const Homepage = () => {
     return (
-        <div>
-            home
-        </div>
+        <>
+        <Banner />
+        <Box />
+        <Card />
+        </>
     );
 };
 
