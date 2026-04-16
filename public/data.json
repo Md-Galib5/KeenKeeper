@@ -7,7 +7,7 @@
     "days_since_contact": 18,
     "status": "Overdue",
     "tags": ["university", "roommate"],
-    "bio": "We studied computer science together in Budapest. Used to code late nights and grab kebabs after exams.",
+    "bio": "Former university classmate and roommate from Budapest.",
     "goal": 14,
     "next_due_date": "2026-03-28"
   },
@@ -19,7 +19,7 @@
     "days_since_contact": 10,
     "status": "Almost Due",
     "tags": ["work", "marketing"],
-    "bio": "Former colleague from my first job. We still exchange career advice and meet for coffee occasionally.",
+    "bio": "Former marketing colleague.",
     "goal": 14,
     "next_due_date": "2026-04-19"
   },
@@ -31,7 +31,7 @@
     "days_since_contact": 5,
     "status": "On-Track",
     "tags": ["travel", "backpacking"],
-    "bio": "Met during a backpacking trip in Spain. We still share travel plans and tips regularly.",
+    "bio": "Travel acquaintance from a backpacking trip.",
     "goal": 14,
     "next_due_date": "2026-04-24"
   },
@@ -43,7 +43,7 @@
     "days_since_contact": 22,
     "status": "Overdue",
     "tags": ["high school", "close friend"],
-    "bio": "One of my oldest friends. We grew up in the same neighborhood and still celebrate birthdays together.",
+    "bio": "Longtime acquaintance from early life.",
     "goal": 14,
     "next_due_date": "2026-03-24"
   },
@@ -55,7 +55,7 @@
     "days_since_contact": 13,
     "status": "Almost Due",
     "tags": ["gym", "fitness"],
-    "bio": "Met at the gym two years ago. We motivate each other and occasionally train together.",
+    "bio": "Gym acquaintance and training partner.",
     "goal": 14,
     "next_due_date": "2026-04-16"
   },
@@ -67,7 +67,7 @@
     "days_since_contact": 7,
     "status": "On-Track",
     "tags": ["language", "French"],
-    "bio": "We met through a language exchange app. I help her with English while she helps me practice French.",
+    "bio": "Language exchange partner.",
     "goal": 14,
     "next_due_date": "2026-04-22"
   },
@@ -79,7 +79,7 @@
     "days_since_contact": 16,
     "status": "Overdue",
     "tags": ["startup", "tech"],
-    "bio": "Co-founder of a small startup we worked on together. We still brainstorm ideas occasionally.",
+    "bio": "Startup and tech collaborator.",
     "goal": 14,
     "next_due_date": "2026-04-01"
   },
@@ -91,7 +91,7 @@
     "days_since_contact": 11,
     "status": "Almost Due",
     "tags": ["conference", "UX design"],
-    "bio": "Met at a UX conference in Berlin. We share design resources and feedback on projects.",
+    "bio": "UX conference connection.",
     "goal": 14,
     "next_due_date": "2026-04-18"
   },
@@ -103,7 +103,7 @@
     "days_since_contact": 3,
     "status": "On-Track",
     "tags": ["football", "weekend games"],
-    "bio": "We play football together almost every weekend. Great teammate and always organizes matches.",
+    "bio": "Regular football teammate.",
     "goal": 14,
     "next_due_date": "2026-04-26"
   },
@@ -115,7 +115,7 @@
     "days_since_contact": 20,
     "status": "Overdue",
     "tags": ["Erasmus", "Denmark"],
-    "bio": "We met during my Erasmus semester. We used to explore cities together and stay in touch online.",
+    "bio": "International exchange acquaintance.",
     "goal": 14,
     "next_due_date": "2026-03-30"
   }

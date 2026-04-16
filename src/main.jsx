@@ -8,6 +8,9 @@ import Homepage from './pages/homepage/Homepage.jsx';
 import Timeline from './pages/timeline/Timeline.jsx';
 import Statspage from './pages/statspage/Statspage.jsx';
 import Layout from './pages/layout/Layout.jsx';
+import Details from './pages/detailspage/Details.jsx';
+import Card from './components/shared/Card.jsx';
+import FriendCard from './components/shared/FriendCard.jsx';
 
 
 const router = createBrowserRouter([
@@ -21,12 +24,20 @@ const router = createBrowserRouter([
         element: <Homepage />
       },
       {
+        path:"/card",
+        element:<FriendCard />
+      },
+      {
         path: "/timeline",
         element: <Timeline />
       },
       {
         path: "/statspage",
         element: <Statspage />
+      },
+      {
+        path:"/details/:id",
+        element:<Details />
       }
     ],
     errorElement:<h2>404 Not Found</h2>
