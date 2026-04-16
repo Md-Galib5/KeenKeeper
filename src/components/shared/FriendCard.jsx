@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router';
+import IMG from "../../../assets/Ellipse 1.png"
 
 const FriendCard = ({friend}) => {
     const navigate = useNavigate();
@@ -13,7 +14,7 @@ const FriendCard = ({friend}) => {
             <figure>
               <img
                 className='h-20 w-20 rounded-full'
-                src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                src={IMG}
                 alt="friend"
               />
             </figure>

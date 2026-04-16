@@ -63,7 +63,7 @@ const Details = () => {
           ))}
         </div>
 
-        <p className="text-center text-sm text-gray-500 italic">
+        <p className="text-center text-sm text-[#8f9bab] font-semibold">
           "{filterFriend.bio}"
         </p>
 
@@ -108,21 +108,21 @@ const Details = () => {
       {/* Goal */}
       <div className="bg-white rounded-xl shadow p-6 flex justify-between items-center">
         <div className='space-y-3'>
-          <p className="text-sm text-gray-500">Relationship Goal</p>
-          <p className="font-medium">Connect every 30 days</p>
+          <p className="text-sm text-black font-semibold">Relationship Goal</p>
+          <p className="font-medium text-gray-500">Connect every <span className='text-black font-semibold'>30 days</span></p>
         </div>
-        <button className="border px-3 py-1 rounded-md text-sm hover:bg-gray-50">
+        <button className="btn px-3 py-1 rounded-md text-sm hover:bg-gray-50">
           Edit
         </button>
       </div>
 
       {/* Quick Check-in */}
       <div className="bg-white rounded-xl shadow p-6">
-        <p className="text-sm text-gray-500 mb-4">Quick Check-in</p>
+        <p className="text-sm text-black font-semibold mb-4">Quick Check-in</p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <button className="border rounded-lg p-4 text-center hover:bg-gray-50"><PiPhoneCallBold className="mx-auto mt-3 text-xl"/>Call</button>
-          <button className="border p-4 text-center rounded-lg  hover:bg-gray-50"><BiMessageDots className="mx-auto mt-3 text-xl"/> Text</button>
-         <button className="border rounded-lg p-4 text-center hover:bg-gray-50">
+          <button className="bg-[#f8fafc] rounded-lg p-4 text-center hover:bg-gray-50"><PiPhoneCallBold className="mx-auto mt-3 text-xl"/>Call</button>
+          <button className="bg-[#f8fafc] p-4 text-center rounded-lg  hover:bg-gray-50"><BiMessageDots className="mx-auto mt-3 text-xl"/> Text</button>
+         <button className="bg-[#f8fafc] rounded-lg p-4 text-center hover:bg-gray-50">
   <PiVideoCameraBold className="mx-auto mt-3 text-xl" />
   <span className="block text-sm mt-1">Video</span>
 </button>
