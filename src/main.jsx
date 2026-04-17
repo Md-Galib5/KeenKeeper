@@ -13,6 +13,7 @@ import Card from './components/shared/Card.jsx';
 import FriendCard from './components/shared/FriendCard.jsx';
 import FriendContext from './context/FriendContext.jsx';
 import { ToastContainer } from 'react-toastify';
+import ErrorPage from './pages/errorpage/ErrorPage.jsx';
 
 
 const router = createBrowserRouter([
@@ -42,7 +43,7 @@ const router = createBrowserRouter([
         element:<Details />
       }
     ],
-    errorElement:<h2>404 Not Found</h2>
+    errorElement:<ErrorPage />
   }
 ]);
 

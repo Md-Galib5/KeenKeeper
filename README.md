@@ -1,10 +1,12 @@
-📱 Friendship Tracker App
+# 📱 Friend Tracking Website
 
-🚀 Project Overview
+## 🚀 Project Overview
 
-Friendship Tracker is a simple and interactive web application that helps users manage and track their interactions with friends. Users can log activities like calls, texts, and video chats, view them in a timeline, and analyze interaction patterns through visual charts.
+This is a Friend Tracking web application that helps users manage and monitor their relationships by tracking interactions like calls, texts, and video chats. It provides a clear timeline and visual analytics to ensure you stay connected with your friends.
 
-🛠️ Technologies Used
+---
+
+## 🛠️ Technologies Used
 
 * ⚛️ React.js
 * 🎨 Tailwind CSS
@@ -14,26 +16,34 @@ Friendship Tracker is a simple and interactive web application that helps users 
 
 ---
 
-✨ Key Features
+## ✨ Key Features
 
+### 1. 🧑‍🤝‍🧑 Smart Friend Management
 
+Easily view friend details, including contact status, tags, and interaction goals to maintain strong relationships.
 
-1. 📌 Timeline Tracking
+### 2. ⏱️ Interaction Timeline
 
-Users can log interactions (Call, Text, Video), and view them in a clean timeline layout with icons.
+Track every interaction (Call, Text, Video) in a clean timeline with icons, timestamps, and activity history.
 
-2. 📊 Analytics Dashboard
+### 3. 📊 Real-Time Analytics
 
-Displays interaction data using charts (Pie Chart) to show how often each type of communication happens.
-
-3. 🔔 Smart Notifications
-
-Prevents duplicate entries and shows toast notifications for success or duplicate actions.
-
-📸 Future Improvements
-
-* Add date-based filtering (weekly/monthly stats)
-* Add user authentication
-* Improve UI with animations
+Visualize your communication habits with dynamic charts showing how often you interact with friends.
 
 ---
+
+## 📂 Installation & Setup
+
+```bash
+npm install
+npm run dev
+```
+
+---
+
+## 📸 Future Improvements
+
+* Add authentication system
+* Add reminders for overdue contacts
+* Improve dashboard with more analytics
+
