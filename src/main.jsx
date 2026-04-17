@@ -41,13 +41,13 @@ const router = createBrowserRouter([
         path: "/details/:id",
         element: <Details />
       }
-    ]
+    ],
+    errorElement: <ErrorPage></ErrorPage>
+
   },
-  {
-    path: "*",
-    element: <ErrorPage />
-  }
+  
 ]);
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <FriendContext>
