@@ -19,16 +19,15 @@ import ErrorPage from './pages/errorpage/ErrorPage.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
-    //element: <h2>Homepage</h2>
     element: <Layout />,
     children: [
       {
-        path:"/",
+        path: "/",
         element: <Homepage />
       },
       {
-        path:"/card",
-        element:<FriendCard />
+        path: "/card",
+        element: <FriendCard />
       },
       {
         path: "/timeline",
@@ -39,19 +38,16 @@ const router = createBrowserRouter([
         element: <Statspage />
       },
       {
-        path:"/details/:id",
-        element:<Details />
-      },
-      
-      {
-  path: "*",
-  element: <ErrorPage />
-}
-    ],
-    //:<ErrorPage />
+        path: "/details/:id",
+        element: <Details />
+      }
+    ]
+  },
+  {
+    path: "*",
+    element: <ErrorPage />
   }
 ]);
-
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <FriendContext>
