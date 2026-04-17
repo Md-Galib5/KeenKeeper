@@ -41,9 +41,14 @@ const router = createBrowserRouter([
       {
         path:"/details/:id",
         element:<Details />
-      }
+      },
+      
+      {
+  path: "*",
+  element: <ErrorPage />
+}
     ],
-    errorElement:<ErrorPage />
+    //:<ErrorPage />
   }
 ]);
 
