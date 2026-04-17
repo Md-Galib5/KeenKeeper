@@ -11,6 +11,7 @@ import Layout from './pages/layout/Layout.jsx';
 import Details from './pages/detailspage/Details.jsx';
 import Card from './components/shared/Card.jsx';
 import FriendCard from './components/shared/FriendCard.jsx';
+import FriendContext from './context/FriendContext.jsx';
 
 
 const router = createBrowserRouter([
@@ -46,6 +47,8 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <FriendContext>
+       <RouterProvider router={router} />
+    </FriendContext>
   </StrictMode>,
 )

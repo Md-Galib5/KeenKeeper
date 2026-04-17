@@ -1,12 +1,13 @@
-import React from 'react';
-import Card from '../../components/shared/Card';
-import FriendCard from '../../components/shared/FriendCard';
+import React, { useContext } from 'react';
+import { DataContext } from '../../context/ContextFile';
 
 
 const Timeline = () => {
+    const {clicked,setClicked} = useContext(DataContext);
+    console.log(clicked);
     return (
         <div>
-          timeline  
+            
         </div>
     );
 };
