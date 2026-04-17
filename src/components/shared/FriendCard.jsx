@@ -8,6 +8,15 @@ const FriendCard = ({friend}) => {
   const handleClick = () => {
     navigate(`/details/${friend.id}`);
   };
+
+    if (!friend) {
+    return (
+      <div className="pt-6 card bg-base-100 shadow-sm flex items-center justify-center h-40">
+        <span className="loading loading-spinner loading-md"></span>
+      </div>
+    );
+  }
+
     return (
          <div onClick={handleClick}
          className="pt-6 card bg-base-100 shadow-sm space-y-2">
