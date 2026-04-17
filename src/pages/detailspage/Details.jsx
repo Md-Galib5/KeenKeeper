@@ -4,6 +4,7 @@ import { PiArchiveBold, PiPhoneCallBold, PiVideoCameraBold } from 'react-icons/p
 import { RiDeleteBinLine, RiNotificationSnoozeLine } from 'react-icons/ri';
 import { useParams } from 'react-router';
 import { DataContext } from '../../context/ContextFile';
+import { toast } from 'react-toastify';
 
 
 
@@ -29,26 +30,33 @@ const Details = () => {
 
     const {clicked,setClicked} = useContext(DataContext);
 
-    if (!filterFriend) {
-        return <h2>Loading or Friend not found...</h2>;
-    }
+   if (!filterFriend) {
+  return (
+    <div className="flex items-center justify-center min-h-screen">
+      <span className="loading loading-dots loading-xl"></span>
+    </div>
+  );
+}
 
-    const handleClick = (type) => {
+const handleClick = (type) => {
   const newEntry = {
     ...filterFriend,
     action: type,
     time: new Date().toISOString(),
   };
 
-  setClicked((prev) => {
-    const exists = prev.find(
-      (item) => item.id === newEntry.id && item.action === newEntry.action
-    );
+  const exists = clicked.some(
+    (item) => item.id === newEntry.id && item.action === newEntry.action
+  );
 
-    if (exists) return prev;
+  if (exists) {
+    toast.error(`${type} already added`);
+    return;
+  }
 
-    return [...prev, newEntry];
-  });
+  setClicked((prev) => [...prev, newEntry]);
+
+  toast.success(`${type} added successfully`);
 };
 
 

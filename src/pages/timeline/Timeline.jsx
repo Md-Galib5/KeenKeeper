@@ -14,7 +14,7 @@ const Timeline = () => {
 
   return (
     <div className='bg-[#f8fafc] min-h-screen'>
-      <div className='w-9/12 mx-auto pt-20'>
+      <div className='w-11/12 sm:w-9/12 mx-auto pt-20'>
         <h2 className='text-3xl font-bold'>Timeline</h2>
 
         {/* Filter */}
@@ -31,10 +31,9 @@ const Timeline = () => {
           </ul>
         </div>
 
-        {/* Timeline list */}
         <div className='pt-6 p-4'>
           {filteredData.length === 0 ? (
-            <p className="text-gray-500">No activity found</p>
+            <p className="text-gray-500 text-4xl flex text-center justify-center">No activity found</p>
           ) : (
             filteredData.map((profile, ind) => (
               <div

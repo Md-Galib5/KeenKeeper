@@ -1,16 +1,39 @@
-# React + Vite
+📱 Friendship Tracker App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🚀 Project Overview
 
-Currently, two official plugins are available:
+Friendship Tracker is a simple and interactive web application that helps users manage and track their interactions with friends. Users can log activities like calls, texts, and video chats, view them in a timeline, and analyze interaction patterns through visual charts.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+🛠️ Technologies Used
 
-## React Compiler
+* ⚛️ React.js
+* 🎨 Tailwind CSS
+* 📊 Recharts
+* 🔔 React Toastify
+* 🌐 React Router
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+✨ Key Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+
+1. 📌 Timeline Tracking
+
+Users can log interactions (Call, Text, Video), and view them in a clean timeline layout with icons.
+
+2. 📊 Analytics Dashboard
+
+Displays interaction data using charts (Pie Chart) to show how often each type of communication happens.
+
+3. 🔔 Smart Notifications
+
+Prevents duplicate entries and shows toast notifications for success or duplicate actions.
+
+📸 Future Improvements
+
+* Add date-based filtering (weekly/monthly stats)
+* Add user authentication
+* Improve UI with animations
+
+---

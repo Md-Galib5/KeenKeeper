@@ -12,6 +12,7 @@ import Details from './pages/detailspage/Details.jsx';
 import Card from './components/shared/Card.jsx';
 import FriendCard from './components/shared/FriendCard.jsx';
 import FriendContext from './context/FriendContext.jsx';
+import { ToastContainer } from 'react-toastify';
 
 
 const router = createBrowserRouter([
@@ -50,5 +51,7 @@ createRoot(document.getElementById('root')).render(
     <FriendContext>
        <RouterProvider router={router} />
     </FriendContext>
+
+     <ToastContainer position="top-center" />
   </StrictMode>,
 )
