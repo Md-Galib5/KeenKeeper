@@ -1,4 +1,4 @@
-import React, { use, useContext } from 'react';
+import React, { use, useContext, useEffect, useState } from 'react';
 import { BiMessageDots } from 'react-icons/bi';
 import { PiArchiveBold, PiPhoneCallBold, PiVideoCameraBold } from 'react-icons/pi';
 import { RiDeleteBinLine, RiNotificationSnoozeLine } from 'react-icons/ri';
@@ -6,10 +6,20 @@ import { useParams } from 'react-router';
 import { DataContext } from '../../context/ContextFile';
 
 
-const friendPromise = fetch('/data.json').then((res) => res.json());
+
+
+//const friendPromise = fetch('/data.json').then((res) => res.json());
 
 const Details = () => {
-    const friends = use(friendPromise);
+
+    const [friends, setFriends] = useState([]);
+
+  useEffect(() => {
+    fetch("/data.json")
+      .then((res) => res.json())
+      .then((data) => setFriends(data));
+  }, []);
+    // const friends = use(friendPromise);
 
     const { id } = useParams();
 
@@ -30,7 +40,15 @@ const Details = () => {
     time: new Date().toISOString(),
   };
 
-  setClicked((prev) => [...prev, newEntry]);
+  setClicked((prev) => {
+    const exists = prev.find(
+      (item) => item.id === newEntry.id && item.action === newEntry.action
+    );
+
+    if (exists) return prev;
+
+    return [...prev, newEntry];
+  });
 };
 
 
@@ -43,7 +61,7 @@ const Details = () => {
         <div className="flex justify-center">
           <img
             className="h-20 w-20 rounded-full"
-            src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+            src={filterFriend.picture}
             alt="friend"
           />
         </div>
@@ -129,9 +147,9 @@ const Details = () => {
       <div className="bg-white rounded-xl shadow p-6">
         <p className="text-sm text-black font-semibold mb-4">Quick Check-in</p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <button onClick={() => handleClick("call")} className="bg-[#f8fafc] rounded-lg p-4 text-center hover:bg-gray-50"><PiPhoneCallBold className="mx-auto mt-3 text-xl"/>Call</button>
-          <button onClick={() => handleClick("call")} className="bg-[#f8fafc] p-4 text-center rounded-lg  hover:bg-gray-50"><BiMessageDots className="mx-auto mt-3 text-xl"/> Text</button>
-         <button onClick={() => handleClick("call")} className="bg-[#f8fafc] rounded-lg p-4 text-center hover:bg-gray-50">
+          <button onClick={() => handleClick("Meetup")} className="bg-[#f8fafc] rounded-lg p-4 text-center hover:bg-gray-50"><PiPhoneCallBold className="mx-auto mt-3 text-xl"/>Call</button>
+          <button onClick={() => handleClick("Text")} className="bg-[#f8fafc] p-4 text-center rounded-lg  hover:bg-gray-50"><BiMessageDots className="mx-auto mt-3 text-xl"/> Text</button>
+         <button onClick={() => handleClick("Video")} className="bg-[#f8fafc] rounded-lg p-4 text-center hover:bg-gray-50">
   <PiVideoCameraBold className="mx-auto mt-3 text-xl" />
   <span className="block text-sm mt-1">Video</span>
 </button>
