@@ -1,4 +1,4 @@
-import React, { use, useContext, useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { BiMessageDots } from 'react-icons/bi';
 import { PiArchiveBold, PiPhoneCallBold, PiVideoCameraBold } from 'react-icons/pi';
 import { RiDeleteBinLine, RiNotificationSnoozeLine } from 'react-icons/ri';
@@ -14,12 +14,21 @@ import { toast } from 'react-toastify';
 const Details = () => {
 
     const [friends, setFriends] = useState([]);
+    const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    fetch("/data.json")
-      .then((res) => res.json())
-      .then((data) => setFriends(data));
-  }, []);
+ useEffect(() => {
+  setLoading(true);
+
+  fetch("/data.json")
+    .then((res) => res.json())
+    .then((data) => {
+      setTimeout(() => {
+        setFriends(data);
+        setLoading(false);
+      }, 5000);
+    });
+
+}, []);
     // const friends = use(friendPromise);
 
     const { id } = useParams();
@@ -30,7 +39,15 @@ const Details = () => {
 
     const {clicked,setClicked} = useContext(DataContext);
 
-   if (!filterFriend) {
+ if (loading) {
+  return (
+    <div className="flex items-center justify-center min-h-screen text-2xl">
+      ⏳ Loading...
+    </div>
+  );
+}
+
+if (!filterFriend) {
   return (
     <div className="flex items-center justify-center min-h-screen">
       <span className="loading loading-dots loading-xl"></span>
