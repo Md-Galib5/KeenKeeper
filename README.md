@@ -16,34 +16,19 @@ This is a Friend Tracking web application that helps users manage and monitor th
 
 ---
 
-## ✨ Key Features
+ ✨ Key Features
 
-### 1. 🧑‍🤝‍🧑 Smart Friend Management
+ 1. 🧑‍🤝‍🧑 Smart Friend Management
 
 Easily view friend details, including contact status, tags, and interaction goals to maintain strong relationships.
 
-### 2. ⏱️ Interaction Timeline
+ 2. ⏱️ Interaction Timeline
 
 Track every interaction (Call, Text, Video) in a clean timeline with icons, timestamps, and activity history.
 
-### 3. 📊 Real-Time Analytics
+3. 📊 Real-Time Analytics
 
 Visualize your communication habits with dynamic charts showing how often you interact with friends.
 
----
 
-## 📂 Installation & Setup
-
-```bash
-npm install
-npm run dev
-```
-
----
-
-## 📸 Future Improvements
-
-* Add authentication system
-* Add reminders for overdue contacts
-* Improve dashboard with more analytics
 

@@ -17,7 +17,7 @@ const Card = () => {
 
   if (loading) {
     return (
-      <div className="flex items-center justify-center min-h-screen flex-col gap-3">
+      <div className="flex items-center min-h-screen flex-col gap-3">
         <span className="loading loading-dots loading-xl"></span>
       </div>
     );
